@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "NixOS Packages Search Engine",
+    "description": "Adds NixOS packages search engine",
+    "version": "1.0",
+    "author": "Wainaina Gichuhi",
+    "homepage_url": "https://github.com/pcf26536/firefox-nixpkgs-extension",
+    "developer": {
+      "name": "Wainaina Gichuhi",
+      "url": "https://github.com/pcf26536"
+    },
+    "chrome_settings_overrides": {
+      "search_provider": {
+        "name": "NixOS Packages",
+        "search_url":"https://search.nixos.org/packages?query={searchTerms}",
+        "keyword": "@nixpkgs",
+        "favicon_url": "https://nixos.org/favicon.ico",
+        "is_default": false,
+        "encoding": "UTF-8"
+      }
+    }
+  }
+  
